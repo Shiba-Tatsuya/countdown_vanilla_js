@@ -1,0 +1,122 @@
+:root {
+    --text-color: black;
+    --text-color-light: rgb(43, 42, 42);
+    --offer-bg: rgba(255, 211, 107, 255);
+    --container-color: rgba(254, 237, 198, 255);
+    --body-font: 'Poppins', sans-serif;
+}
+
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+
+.container {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.countdown
+{
+    font-weight: 700;
+}
+
+.banner__container {
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid var(--offer-bg);
+    background: var(--container-color);
+    border-radius: 20px;
+}
+
+.banner__header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.banner__header p {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px;
+    border-bottom: 1px solid ;
+}
+
+
+
+.banner__header img {
+    width: 3em;
+}
+
+
+.banner__main {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.banner__footer {
+    background-color: var(--offer-bg);
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.banner__footer span {
+    font-weight: 700;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        width: 90%;
+        /* Add any other styles for the parent container if needed */
+    }
+    
+    .banner__container {
+        display: flex;
+        flex-direction: row;
+        padding: 0 1rem;
+        background-color: #fead01;
+        justify-content: space-between;
+        border-radius: 40px;
+    }
+    
+    .banner__header {
+        width: 33.33%;
+        font-size: 1rem;
+    }
+    
+    .banner__header p {
+        font-size: 1rem; /* Change to the desired font size or use a CSS variable if defined */
+        border: none;
+    }
+    
+    .banner__main {
+        width: 33.33%;
+        font-size: 1rem;
+    }
+    
+    .banner__footer {
+        background-color: #fead01;
+        width: 33.33%;
+        text-align: center;
+        font-size: .8rem;
+        margin: 0;
+    }
+    
+    
+}
